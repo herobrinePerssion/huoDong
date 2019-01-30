@@ -1,0 +1,274 @@
+body,
+.icon {
+  font-size: 0.7rem;
+}
+
+.icon-xingxing {
+  color: #cccccc;
+}
+
+@media screen and (max-width: 320px) {
+  body {
+    font-size: 0.5rem;
+  }
+
+  .icon {
+    font-size: 0.5rem;
+  }
+
+  .result-bottom {
+
+    padding-bottom: 205vw;
+  }
+}
+
+
+/* 星星变色 */
+.goodluck-colored {
+  background: linear-gradient(to bottom, #fff0cc, #f6750e);
+  -webkit-background-clip: text;
+  color: transparent;
+  /* 标准的语法（必须放在最后） */
+}
+
+.badluck-colored {
+  background: linear-gradient(to bottom, #ffaf9c, #f90507);
+  -webkit-background-clip: text;
+  color: transparent;
+  /* 标准的语法（必须放在最后） */
+
+
+
+}
+
+
+.content {
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/images/result_bg.png');
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.result-box {
+  position: relative;
+  margin: 4vh 0;
+  padding: 2vh;
+  width: 94%;
+  height: 20vh;
+  border-style: solid;
+  border-width: 6px;
+  border-color: rgb(115, 73, 51);
+  border-radius: 8px;
+  background-color: rgb(255, 250, 229);
+}
+
+.result-box .box-header {
+  width: 40vw;
+  line-height: 4vh;
+  text-align: center;
+  color: #ffffff;
+  font-size: 0.75rem;
+  /* font-weight: bold; */
+  height: 4vh;
+  background-image: url(../assets/images/bagua_header.png);
+  background-size: 100% 100%;
+  position: absolute;
+  left: 50%;
+  margin-left: -20vw;
+  top: -2.5vh;
+}
+
+.content-text {
+  font-size: 0.5rem;
+}
+
+.list-item {
+  margin: 0.5vh;
+}
+
+.star {
+  display: flex;
+  align-items: center;
+}
+
+.result-bottom {
+  position: relative;
+  height: 80vh;
+  margin-top: 0vh;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 205vw;
+}
+
+.whole-part-two {
+  margin-top: 18vh;
+
+}
+
+.trapezoid-1 {
+  border-radius: 0.5em 0.5em 0 0;
+  margin: 20px;
+  height: 100px;
+  width: 50%;
+  transform-origin: bottom;
+  transform: scaleY(1.3) perspective(0.5em) rotateX(5deg);
+  border: 1px solid #ccb687;
+  border-left: none;
+  border-bottom: none;
+}
+
+.polygonOne {
+  position: absolute;
+  width: 20vw;
+  height: 20vw;
+  left: 50%;
+  top: 50%;
+  margin-top: -10vw;
+  margin-left: -10vw;
+  background-image: url('../assets/images/luckyStar.png');
+  background-size: 100% 100%;
+}
+
+.polygonTwo {
+  position: absolute;
+  width: 20vw;
+  height: 20vw;
+  left: 50%;
+  top: 50%;
+  margin-top: -10vw;
+  margin-left: -10vw;
+  background-image: url('../assets/images/badLuckStar.png');
+  background-size: 100% 100%;
+}
+
+.result-label {
+  display: flex;
+  justify-content: space-between;
+}
+
+.result-label .right-part {
+
+  text-align: center;
+}
+
+
+.left-part .result-title,
+.right-part .result-title {
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-align: center;
+
+}
+
+.left-part .result-content,
+.right-part .result-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.analyse-box {
+  width: 27vw;
+  height: 27vw;
+  margin-top: 2vh;
+  border: 1px solid #ccb687;
+  border-radius: 5px;
+  padding: 1vw;
+}
+
+
+.box-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box-bottom {
+  margin-top: 45vw;
+  position: absolute;
+}
+
+.cover {
+  position: relative;
+}
+
+.cover .main {
+  border: 2px #ccb687 solid;
+  border-left: none;
+  border-right: none;
+  z-index: 1;
+  height: 45vw;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.cover .line {
+  height: 3px;
+  width: 80px;
+  background-color: #fffae5;
+  position: absolute;
+  left: 50%;
+  margin-left: -40px;
+  z-index: 2;
+}
+
+.cover .line1 {
+  top: 0;
+}
+
+.cover .line2 {
+  bottom: 0;
+}
+
+.cover .rotate-line {
+  height: 2px;
+  width: 40px;
+  background-color: #ccb687;
+  position: absolute;
+  left: 50%;
+  z-index: 2;
+}
+
+.cover .rotate-line1 {
+  margin-left: -50px;
+  transform: rotate(60deg);
+  top: 0;
+  margin-top: 17px;
+}
+
+.cover .rotate-line2 {
+  margin-left: 10px;
+  transform: rotate(-60deg);
+  top: 0;
+  margin-top: 17px;
+}
+
+.cover .rotate-line3 {
+  margin-left: -50px;
+  transform: rotate(-60deg);
+  bottom: 0;
+  margin-bottom: 17px;
+}
+
+.cover .rotate-line4 {
+  margin-left: 10px;
+  transform: rotate(60deg);
+  bottom: 0;
+  margin-bottom: 17px;
+}
+
+.whole-part {
+  position: relative;
+}
+
+.devide {
+  border: 1px dashed #d8ccb3;
+  margin: 1vh 0;
+}

@@ -1,0 +1,103 @@
+.content {
+  background-image: url('../assets/images/luckAnalyse_bg.png');
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.bar .button-link {
+  top: 0;
+  padding: 0;
+  font-size: .8rem;
+  line-height: 2.2rem;
+  height: 2.2rem;
+  color: #333333;
+  border: 0;
+}
+
+.content-in {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bagua {
+  position: absolute;
+  top: 50%;
+  margin-top: -50vw;
+  width: 100%;
+  height: 100vw;
+  background-image: url('../assets/images/bagua.png');
+  background-size: 100% 100%;
+  animation: earth-animation 25s linear infinite;
+}
+
+
+@keyframes earth-animation {
+  0% {
+    transform: rotate(0deg);
+    transform-origin: 50% 50%
+  }
+
+  50% {
+    transform: rotate(180deg);
+    transform-origin: 50% 50%
+  }
+
+  to {
+    transform: rotate(1turn);
+    transform-origin: 50% 50%
+  }
+}
+
+.form-group {
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.form-group>input {
+  color: #333333;
+  font-size: 0.65rem;
+  height: 4.5vh;
+  margin: 0.7vh;
+  text-align: center;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border-width: 1px;
+  border-color: rgb(179, 179, 179);
+  border-style: solid;
+  border-radius: 6px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 10px 20.79px 0.21px rgba(135, 110, 56, 0.4);
+}
+
+.form-group>input::placeholder {
+  color: #b4b4b4;
+  background-color: #ffffff
+}
+
+.button-yunshi {
+  border: 1px solid rgb(115, 73, 51);
+  color: #b6944a;
+  font-size: .85rem;
+  font-weight: bold;
+  margin-top: 1vh;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 5vh;
+  line-height: 5vh;
+  text-align: center;
+  background-color: rgb(115, 73, 51);
+  box-shadow: 0px 10px 20.79px 0.21px rgba(135, 110, 56, 0.4);
+}
+
+.button-yunshi:active {
+  color: #333333;
+  border-color: rgb(115, 73, 51);
+}
